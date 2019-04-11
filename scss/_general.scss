@@ -13,7 +13,97 @@ body {
     width: 1000px;
     margin: 0 auto;
 }
+.profile{
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    padding: 20px;
 
+    &__img{
+        position: relative;
+        border: 2px solid $color-yellow;
+        padding: 40px;
+        
+    }
+    &__info h3{
+        color: $color-grey;
+        font-size: 36px;
+        // margin: 30px 80px;
+        font-family: $font-roboto;
+        padding-bottom: 35px;
+        
+    }
+    &__info{
+        // dislay: inline-block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 80px;
+        
+    }
+    &__info>.position{
+        font-size: 24px;
+        font-family: $font-raleway;
+        font-weight: 100;
+        margin-bottom: 35px;
+    }
+    &__info>.profile__description{
+        font-size: 12px;
+        margin: 20px;
+        font-family: $font-raleway;
+    }
+    &__description{
+        font-family: $font-raleway;
+        font-size: 3px;
+    }   
+}
+
+.s-btn{
+    border:none;
+    background: transparent;
+    margin: 3px;
+}
+.right-top-angle{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    border-top: 2px solid $color-yellow;
+    border-right: 2px solid $color-yellow;
+    
+}
+.left-top-angle{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    border-top: 2px solid $color-yellow;
+    border-left: 2px solid $color-yellow;
+    
+}
+.right-bottom-angle{
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    border-bottom: 2px solid $color-yellow;
+    border-right: 2px solid $color-yellow;
+    
+}
+.left-bottom-angle{
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    border-bottom: 2px solid $color-yellow;
+    border-left: 2px solid $color-yellow;
+    
+}
 .section {
     padding: 100px 0;
 
@@ -55,4 +145,41 @@ body {
             background-color: $color-yellow;
         }
     }
+}
+.v-line{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 400px;
+    margin-left: 40px;
+    background-color: $color-yellow;
+}
+.h-line{
+    content: '';
+    display: block;
+    width: 210px;
+    height: 1px;
+    margin-bottom: 15px;
+    background-color: $color-yellow;
+}
+.box-h-line{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-bottom: 20px;
+}
+.box-h-line .h-line{
+    width: 15px;
+    border:2px solid $color-yellow;
+    margin: 5px;
+}
+.profile__btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: $font-raleway;
+    padding: 5px;
+    color: $color-grey;
+    border:2px solid $color-yellow;
+
 }

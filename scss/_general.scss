@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-white;
+    font-size: 14px;
+}
+
+.grid {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 100px 0;
+
+    &__title {
+        text-align: center;
+        
+        h2 {
+            margin-bottom: 50px;
+            font-family: $font-roboto;
+            font-size: 60px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: $color-yellow;
+        }
+    }
+
+    &__description {
+        font-family: $font-raleway;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $color-grey;
+    }
+
+    &__divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            margin: 0 7px;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            width: 210px;
+            height: 1px;
+            background-color: $color-yellow;
+        }
+    }
+}
